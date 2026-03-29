@@ -1,0 +1,71 @@
+body{
+margin:0;
+font-family:Arial;
+}
+
+.navbar{
+background:#1e3d59;
+padding:15px 40px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+
+.logo{
+color:white;
+font-size:22px;
+font-weight:bold;
+}
+
+.menu a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+font-size:16px;
+}
+
+.menu a:hover{
+color:#f5b041;
+}
+
+.content{
+padding:40px;
+}
+
+.hero{
+height:85vh;
+background-image:url('/static/bank.avif');
+background-size:cover;
+background-position:center;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+color:white;
+text-align:center;
+}
+
+.hero h1{
+font-size:50px;
+margin-bottom:10px;
+}
+
+.hero p{
+font-size:22px;
+margin-bottom:20px;
+}
+
+.btn{
+background:#f5b041;
+padding:12px 25px;
+text-decoration:none;
+color:black;
+margin:10px;
+border-radius:6px;
+font-weight:bold;
+}
+
+.btn:hover{
+background:white;
+}

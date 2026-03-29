@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Deposit{% endblock %}
+
+{% block content %}
+<div style="max-width: 500px; margin: 50px auto; background: white; padding: 40px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.2);">
+    <h2 style="text-align: center; margin-bottom: 20px;">Deposit Money</h2>
+    <p style="text-align: center; margin-bottom: 30px;">Current Balance: <strong>Rs.{{ balance|floatformat:2 }}</strong></p>
+    
+    <form method="POST">
+        {% csrf_token %}
+        <input type="number" name="amount" step="0.01" placeholder="Enter amount" required style="width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #ddd; border-radius: 5px;">
+        <button type="submit" style="width: 100%; padding: 12px; background: #28a745; color: white; border: none; border-radius: 5px; font-size: 16px; cursor: pointer;">💰 Confirm Deposit</button>
+    </form>
+    
+    <p style="text-align: center; margin-top: 20px;">
+        <a href="/dashboard/" style="color: #007bff;">← Back to Dashboard</a>
+    </p>
+</div>
+{% endblock %}
